@@ -65,6 +65,7 @@ func InterpolateParams(query string, args []driver.NamedValue) (string, error) {
 			} else {
 				buf.WriteByte('0')
 			}
+
 		case time.Time:
 			t := v.Format(time.RFC3339Nano)
 			buf.WriteByte('\'')
