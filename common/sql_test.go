@@ -1,3 +1,6 @@
+//go:build !taos_quote_params
+// +build !taos_quote_params
+
 package common
 
 import (
